@@ -54,7 +54,7 @@ function Header({ toggleSidebar, width }) {
         <div className="absolute right-5 flex items-center">
           {role == "USER" && pathname != "/" && (
             <Button
-              className="w-full items-center font-semibold text-xl rounded-md bg-blue-500 mx-5"
+              className="w-full items-center font-semibold text-xl rounded-md bg-[#27616e] mx-5"
               onClick={() => {
                 navigate("/");
               }}

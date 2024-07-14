@@ -154,7 +154,7 @@ const Landing = () => {
               </select>
               <button
                 type="submit"
-                className="py-2 text-white items-center font-semibold text-xl rounded-md bg-blue-500 mb-5"
+                className="py-2 text-white items-center font-semibold text-xl rounded-md bg-[#27616e] mb-5"
               >
                 Search
               </button>

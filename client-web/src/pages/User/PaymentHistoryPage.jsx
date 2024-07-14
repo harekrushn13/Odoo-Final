@@ -5,7 +5,7 @@ import { FaPaypal } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 
 const headerStyle = {
-  backgroundColor: "#002865",
+  backgroundColor: "#27616e",
   color: "white",
   textAlign: "center",
 };
@@ -60,7 +60,7 @@ const PaymentHistoryPage = () => {
         return (
           <div className="flex justify-evenly">
             <button
-              className="px-5 py-2 bg-blue-500 text-white font-bold rounded-md"
+              className="px-5 py-2 bg-[#27616e] text-white font-bold rounded-md"
               onClick={() =>
                 navigate("abc")
               }

@@ -15,7 +15,7 @@ const tableStyle = {
 };
 
 const headerStyle = {
-	backgroundColor: '#002865',
+	backgroundColor: '#27616e',
 	color: 'white',
 	textAlign: 'center',
 };

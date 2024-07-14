@@ -127,7 +127,7 @@ function Login() {
               </div>
               <button
                 type="submit"
-                className="w-full text-white bg-black focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                className="w-full text-white bg-[#27616e] focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
                 disabled={loading}
               >
                 {loading ? "Signing in..." : "Sign in"}

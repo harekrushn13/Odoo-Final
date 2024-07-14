@@ -48,8 +48,8 @@ function SideBarLink({
             classNames(
               "select-none w-full h-16 flex flex-row items-center ps-5 font-semibold text-xl cursor-pointer transition-all",
               {
-                "bg-blue-500 text-white": props.isActive, 
-                "text-black hover:bg-blue-100 hover:text-blue-500": !props.isActive,
+                "bg-[#27616e] text-white": props.isActive, 
+                "text-black hover:bg-[#abcad1] hover:text-blue-500": !props.isActive,
               }
             )
           }

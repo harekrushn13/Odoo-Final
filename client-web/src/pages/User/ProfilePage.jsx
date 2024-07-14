@@ -49,7 +49,7 @@ const ProfilePage = () => {
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-3xl">
-      <h2 className="text-3xl font-semibold mb-6 text-center text-blue-600">
+      <h2 className="text-3xl font-semibold mb-6 text-center text-[#27616e]">
         User Profile
       </h2>
       <div className="flex flex-col items-center space-y-6 bg-white p-6 rounded-lg shadow-lg">
@@ -126,7 +126,7 @@ const ProfilePage = () => {
               <button
                 type="button"
                 onClick={handleSaveClick}
-                className="px-4 py-2 bg-blue-500 text-white rounded-md shadow hover:bg-blue-600 transition duration-200"
+                className="px-4 py-2 bg-[#27616e] text-white rounded-md shadow hover:bg-[#27616e]-600 transition duration-200"
               >
                 Save
               </button>
@@ -142,7 +142,7 @@ const ProfilePage = () => {
             <button
               type="button"
               onClick={handleEditClick}
-              className="px-4 py-2 bg-blue-500 text-white rounded-md shadow hover:bg-blue-600 transition duration-200"
+              className="px-4 py-2 bg-[#27616e] text-white rounded-md shadow hover:bg-[#27616e]-600 transition duration-200"
             >
               Edit
             </button>
