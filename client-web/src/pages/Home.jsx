@@ -49,8 +49,8 @@ function Home() {
     };
   }, []);
 
-  const toggleSidebar = (prev) => {
-    setSideBar(!prev);
+  const toggleSidebar = (value) => {
+    setSideBar(value);
   };
 
   useEffect(() => {
@@ -66,15 +66,13 @@ function Home() {
   return (
     <>
       <Toast ref={toast} />
-      <Header toggleSidebar={toggleSidebar} width={width} />
+      <Header />
 
       <div className="w-full h-full overflow-x-hidden">
         <div className="flex flex-row h-[90vh] w-full overflow-x-hidden">
           <div
-            className={`absolute md:static top-15 left-0 md:top-auto h-[90vh] overflow-y-auto transition-all z-20 shadow-xl ${
-              sideBar ? "left-0" : "-left-72"
-            }`}
-            style={{ minWidth: 224 }}
+            className="absolute md:static top-15 left-0 md:top-auto h-screen md:h-full overflow-y-auto transition-all z-20 shadow-xl"
+            style={{ left: sideBar ? 0 : -300, minWidth: 224 }}
           >
             {localStorage.getItem("role") &&
               sideBarLinks[localStorage.getItem("role")].map((ele) => (
@@ -96,7 +94,7 @@ function Home() {
           </div>
           <div
             className={
-              "overflow-y-auto w-full h-full p-2 pl-56 md:p-7 pb-20 md:pb-5"
+              "overflow-y-auto w-full h-full p-2 pl-48 md:p-7 pb-20 md:pb-5"
             }
           >
             <Outlet />
