@@ -6,6 +6,9 @@ import Loading from "../components/Loading";
 
 import { PrimeIcons } from "primereact/api";
 import CountCard from "../components/Dashboard/CountCard";
+import LineChart from "../components/Charts/LineChart";
+import PieChart from "../components/Charts/PieChart";
+import BarChart from "../components/Charts/BarChart";
 
 function Dashboard() {
   const role = localStorage.getItem("role").toLowerCase();
@@ -28,7 +31,7 @@ function Dashboard() {
   //             <i className={PrimeIcons.BUILDING} style={{ fontSize: "25px" }} />
   //           ),
   //         },
-  //       ],      
+  //       ],
   //     };
   //     setCount(data);
   //   } else {
@@ -54,7 +57,7 @@ function Dashboard() {
             <i className={PrimeIcons.BUILDING} style={{ fontSize: "25px" }} />
           ),
         },
-      ],      
+      ],
       USER: [
         {
           label: "Total Librarian",
@@ -70,11 +73,11 @@ function Dashboard() {
             <i className={PrimeIcons.BUILDING} style={{ fontSize: "25px" }} />
           ),
         },
-      ],      
+      ],
     };
     setCount(data);
     setLoading(false);
-  }
+  };
   useEffect(() => {
     getData();
   }, []);
@@ -98,6 +101,49 @@ function Dashboard() {
           })}
       </div>
       {count && <div>{count.instituteCount}</div>}
+      {localStorage.getItem("role") == "ADMIN" && (
+        <>
+          <LineChart
+            labels={[
+              "January",
+              "February",
+              "March",
+              "April",
+              "May",
+              "June",
+              "July",
+            ]}
+            datasets={[
+              {
+                label: "Book Usage Per Month",
+                data: [65, 59, 80, 81, 56, 55, 40],
+              },
+            ]}
+          />
+          <PieChart
+            labels={["Sci-Fi", "Management", "sex", "Hero"]}
+            datasets={[{ data: [50, 100, 10, 90] }]}
+          />
+          <BarChart
+            labels={[
+              "January",
+              "February",
+              "March",
+              "April",
+              "May",
+              "June",
+              "July",
+            ]}
+            datasets={[
+              {
+                label: "My First dataset",
+                data: [65, 59, 80, 81, 56, 55, 40],
+              },
+            ]}
+            type={"horizontal"}
+          />
+        </>
+      )}
     </>
   );
 }
