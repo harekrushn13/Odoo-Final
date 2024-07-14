@@ -10,6 +10,8 @@ import Landing from "./pages/Landing";
 import Register from "./components/Register";
 import ProfilePage from "./pages/User/ProfilePage";
 import BookDetail from "./pages/User/BookDetail";
+import HistoryPage from "./pages/User/HistoryPage";
+
 function Main() {
   const routes = createBrowserRouter([
     {
@@ -44,6 +46,7 @@ function Main() {
       children: [
         { path: "", element: <Dashboard /> },
         { path: "profile", element: <ProfilePage /> },
+        { path: "history", element: <HistoryPage /> },
       ],
     },
     {

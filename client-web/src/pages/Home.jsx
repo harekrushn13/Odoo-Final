@@ -41,6 +41,11 @@ function Home() {
           name: "My Profile",
         },
         {
+          to: "/user/history",
+          iconClass: PrimeIcons.HISTORY,
+          name: "History",
+        },
+        {
           to: "/",
           iconClass: PrimeIcons.SIGN_OUT,
           name: "Logout",
@@ -94,7 +99,7 @@ function Home() {
           </div>
           <div
             className={
-              "overflow-y-auto w-full h-full p-2 pl-48 md:p-7 pb-20 md:pb-5"
+              "overflow-y-auto w-full h-full p-2 pl-56 md:p-7 pb-20 md:pb-5"
             }
           >
             <Outlet />
