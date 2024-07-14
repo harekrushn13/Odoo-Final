@@ -14,9 +14,6 @@ function BookCard({ book }) {
                 <h5 className="text-lg font-semibold text-blue-gray-900">
                     {book.volumeInfo.title}
                 </h5>
-                <p className="text-sm text-gray-600">
-                    {book.volumeInfo.averageRating ? `Rating: ${book.volumeInfo.averageRating}` : "Rating: N/A"}
-                </p>
                 <p className="text-base font-light text-gray-700 truncate">
                     {book.volumeInfo.description ? book.volumeInfo.description.slice(0, 100) + '...' : 'No description available.'}
                 </p>
