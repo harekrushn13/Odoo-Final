@@ -106,31 +106,31 @@ The Library Management System is a comprehensive application designed to manage 
 
 #### Landing Page
 
-![Screenshot (76)](https://github.com/user-attachments/assets/40d4b21c-fe87-45fb-8631-4d730e2c90c8)
+![Screenshot (84)](https://github.com/user-attachments/assets/20fc154d-b04f-40ca-aebf-561b2a0d9ecc)
 
 #### Login Page
 
-![Screenshot (77)](https://github.com/user-attachments/assets/a1d25ee9-1359-4920-931b-04f2c66a9a9e)
+![Screenshot (85)](https://github.com/user-attachments/assets/5872e3df-f72a-47fa-a695-f29980f73d7e)
 
 #### Sign Up Page
 
-![Screenshot (78)](https://github.com/user-attachments/assets/f0940a07-be74-40eb-b518-db09b34c27b2)
+![Screenshot (86)](https://github.com/user-attachments/assets/4a6ca170-f29e-4d81-9a6a-69b815777b1c)
 
 #### User Profile
 
-![Screenshot (79)](https://github.com/user-attachments/assets/be4f8141-82da-429d-8aea-72d76e8e46f3)
+![Screenshot (87)](https://github.com/user-attachments/assets/b05a2a78-3832-4530-b9f7-f07de93bd8c9)
 
-#### Current & Pass Book History
+#### Current & Past Book History
 
-![Screenshot (80)](https://github.com/user-attachments/assets/a54abdd6-da62-4d82-b72c-a5c6c6ddd1f8)
+![Screenshot (88)](https://github.com/user-attachments/assets/dfeedce1-c656-41d2-9812-a9722dd2a68c)
 
 #### Payment History
 
-![Screenshot (81)](https://github.com/user-attachments/assets/098cf491-f0b8-4887-8fbb-fdaeecab29a8)
+![Screenshot (89)](https://github.com/user-attachments/assets/3e32acf1-2b42-44f3-a8ae-6d69869ef50f)
 
 #### Book Details Page
 
-![Screenshot (82)](https://github.com/user-attachments/assets/37c78398-7d99-4d03-911b-1d2ec6af127e)
+![Screenshot (90)](https://github.com/user-attachments/assets/08dfc083-a428-47d6-a24f-0f9276ccafe1)
 
 ### Admin UI
 
@@ -142,4 +142,4 @@ The Library Management System is a comprehensive application designed to manage 
 
 #### Librarians List
 
-![Screenshot (83)](https://github.com/user-attachments/assets/fd98f5b2-be32-4530-b7a6-99c3d156de8b)
+![Screenshot (91)](https://github.com/user-attachments/assets/977a4b2f-6d17-4a14-9a93-d262c102eb87)
