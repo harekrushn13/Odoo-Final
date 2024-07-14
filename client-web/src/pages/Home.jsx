@@ -46,6 +46,11 @@ function Home() {
           name: "History",
         },
         {
+          to: "/user/payment",
+          iconClass: PrimeIcons.PAYPAL,
+          name: "Payment History",
+        },
+        {
           to: "/",
           iconClass: PrimeIcons.SIGN_OUT,
           name: "Logout",
