@@ -10,6 +10,7 @@ const adminRoutes = require("./routes/admin-routes");
 const { errorHandler } = require("./controllers/error-controller");
 const { register, login } = require("./controllers/common-controller");
 const { multerConfig } = require("./utils/upload-files-utils");
+const usersModel = require("./models/user-models");
 
 const app = express();
 app.use(cors());
@@ -41,3 +42,15 @@ dbConnection()
   .catch((err) => {
     console.log(err.message);
   });
+
+async function addAdmin() {
+  const admin = new usersModel({
+    email: "abc@gmail.com",
+    fullname: "admindas",
+    is_active: 1,
+    password: "123",
+    username: "admin",
+    role: "ADMIN",
+  });
+  await admin.save();
+}
