@@ -112,12 +112,12 @@ function Login() {
                 />
               </div>
               <div className="flex items-center justify-between">
-                <a
+                {/* <a
                   href="#"
                   className="text-sm font-medium text-primary-600 hover:underline"
                 >
                   Forgot password?
-                </a>
+                </a> */}
                 <Link
                   to="/register"
                   className="text-sm font-medium text-primary-600 hover:underline"

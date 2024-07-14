@@ -7,18 +7,22 @@ import { loginLoader, verifyLoader } from "./loaders/verifyLoader";
 import Dashboard from "./pages/Dashboard";
 import LibrarianPage from "./pages/Admin/LibrarianPage";
 import Landing from "./pages/Landing";
-
+import Register from "./components/Register";
+import ProfilePage from "./pages/User/ProfilePage";
 function Main() {
   const routes = createBrowserRouter([
     {
       path: "/",
       element: <Landing />,
-      // loader: loginLoader,
     },
     {
       path: "/login",
       element: <Login />,
       loader: loginLoader,
+    },
+    {
+      path: "/register",
+      element: <Register />,
     },
     {
       path: "/admin",
@@ -37,7 +41,7 @@ function Main() {
       errorElement: <ErrorElement />,
       children: [
         { path: "", element: <Dashboard /> },
-        { path: "profile", element: <LibrarianPage /> },
+        { path: "profile", element: <ProfilePage /> },
       ],
     },
     {
