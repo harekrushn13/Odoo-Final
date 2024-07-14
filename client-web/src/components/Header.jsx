@@ -1,6 +1,6 @@
 import { Menu } from "primereact/menu";
 import { useRef } from "react";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "primeicons/primeicons.css";
 import { PrimeIcons } from "primereact/api";
 import { Button } from "primereact/button";
@@ -13,15 +13,13 @@ function Header({ toggleSidebar, width }) {
   const menuLeft = useRef(null);
   const location = useLocation();
   const { pathname } = location;
-  console.log(token);
-  console.log(role);
   const items = [
     {
       label: localStorage.getItem("role"),
       items: [
         {
           label: "Dashboard",
-          icon: "pi pi-power-off",
+          icon: "pi pi-home",
           command: () => {
             navigate("/" + role.toLowerCase());
           },
