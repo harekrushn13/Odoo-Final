@@ -15,8 +15,13 @@ function Home() {
       ADMIN: [
         {
           to: "/admin",
-          iconClass: PrimeIcons.HOME,
+          iconClass: PrimeIcons.BUILDING,
           name: "Dashboard",
+        },
+        {
+          to: "/admin/librarian",
+          iconClass: PrimeIcons.USERS,
+          name: "Librarian",
         },
         {
           to: "/",
@@ -24,6 +29,18 @@ function Home() {
           name: "Logout",
         },
       ],
+      USER:[
+        {
+          to: "/user",
+          iconClass: PrimeIcons.BUILDING,
+          name: "Dashboard",
+        },
+        {
+          to: "/",
+          iconClass: PrimeIcons.SIGN_OUT,
+          name: "Logout",
+        },
+      ]
     };
   }, []);
 

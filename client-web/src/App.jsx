@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Login from "./components/Login";
 import { loginLoader, verifyLoader } from "./loaders/verifyLoader";
 import Dashboard from "./pages/Dashboard";
-import Register from "./components/Register";
+import LibrarianPage from "./pages/Admin/LibrarianPage";
 
 function Main() {
   const routes = createBrowserRouter([
@@ -15,18 +15,23 @@ function Main() {
       loader: loginLoader,
     },
     {
-      path: "/register",
-      element: <Register />,
-      // loader: loginLoader,
-    },
-    {
       path: "/admin",
       element: <Home />,
       loader: verifyLoader,
       errorElement: <ErrorElement />,
       children: [
         { path: "", element: <Dashboard /> },
-        // { path: "institutes", element: <Institutes /> },
+        { path: "librarian", element: <LibrarianPage /> },
+      ],
+    },
+    {
+      path: "/user",
+      element: <Home />,
+      loader: verifyLoader,
+      errorElement: <ErrorElement />,
+      children: [
+        { path: "", element: <Dashboard /> },
+        { path: "profile", element: <LibrarianPage /> },
       ],
     },
     {

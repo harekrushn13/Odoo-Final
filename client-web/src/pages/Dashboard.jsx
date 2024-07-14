@@ -13,67 +13,68 @@ function Dashboard() {
   const [loading, setLoading] = useState(true);
 
   const navigate = useNavigate();
+  // const getData = async () => {
+  //   const result = await fetchGet(
+  //     role + "/dashboard",
+  //     localStorage.getItem("token")
+  //   );
+  //   if (result.success) {
+  //     let data = {
+  //       ADMIN: [
+  //         {
+  //           label: "Total Lbrarian",
+  //           count: result.data.instituteCount,
+  //           iconClass: (
+  //             <i className={PrimeIcons.BUILDING} style={{ fontSize: "25px" }} />
+  //           ),
+  //         },
+  //       ],      
+  //     };
+  //     setCount(data);
+  //   } else {
+  //     navigate("/");
+  //   }
+  //   setLoading(false);
+  // };
+
   const getData = async () => {
-    const result = await fetchGet(
-      role + "/dashboard",
-      localStorage.getItem("token")
-    );
-    if (result.success) {
-      let data = {
-        ADMIN: [
-          {
-            label: "Institutes",
-            count: result.data.instituteCount,
-            iconClass: (
-              <i className={PrimeIcons.BUILDING} style={{ fontSize: "25px" }} />
-            ),
-          },
-        ],
-        HR: [
-          {
-            label: "Departments",
-            count: result.data.departmentCount,
-            iconClass: (
-              <i
-                className={PrimeIcons.BUILDING}
-                style={{ fontSize: "25px" }}
-              ></i>
-            ),
-          },
-          {
-            label: "Teachers",
-            count: result.data.teacherCount,
-            iconClass: (
-              <i className={PrimeIcons.USERS} style={{ fontSize: "25px" }}></i>
-            ),
-          },
-          {
-            label: "Subjects",
-            count: result.data.subjectCount,
-            iconClass: (
-              <i className={PrimeIcons.BOOK} style={{ fontSize: "25px" }}></i>
-            ),
-          },
-        ],
-        EMPLOYEE: [
-          {
-            label: "Students",
-            count: result.data.students,
-            iconClass: (
-              <i
-                className={PrimeIcons.USER_GRADUATE}
-                style={{ fontSize: "25px" }}
-              ></i>
-            ),
-          },
-        ],
-      };
-      setCount(data);
-    } else {
-      navigate("/");
-    }
+    let data = {
+      ADMIN: [
+        {
+          label: "Total Librarian",
+          count: 10,
+          iconClass: (
+            <i className={PrimeIcons.BUILDING} style={{ fontSize: "25px" }} />
+          ),
+        },
+        {
+          label: "Total Librarian",
+          count: 10,
+          iconClass: (
+            <i className={PrimeIcons.BUILDING} style={{ fontSize: "25px" }} />
+          ),
+        },
+      ],      
+      USER: [
+        {
+          label: "Total Librarian",
+          count: 10,
+          iconClass: (
+            <i className={PrimeIcons.BUILDING} style={{ fontSize: "25px" }} />
+          ),
+        },
+        {
+          label: "Total Librarian",
+          count: 10,
+          iconClass: (
+            <i className={PrimeIcons.BUILDING} style={{ fontSize: "25px" }} />
+          ),
+        },
+      ],      
+    };
+    setCount(data);
     setLoading(false);
-  };
+  }
   useEffect(() => {
     getData();
   }, []);

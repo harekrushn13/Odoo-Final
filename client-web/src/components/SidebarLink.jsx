@@ -25,8 +25,8 @@ function SideBarLink({
             classNames(
               "select-none w-full h-16 flex flex-row items-center ps-5 font-semibold text-xl cursor-pointer transition-all",
               {
-                "bg-blue-500 text-white": props.isActive, 
-                "text-black hover:bg-white hover:text-darkBlue":
+                "bg-red-600 text-white": props.isActive,
+                "text-black hover:bg-red-100 hover:text-red-600":
                   !props.isActive,
               }
             )
@@ -49,8 +49,7 @@ function SideBarLink({
               "select-none w-full h-16 flex flex-row items-center ps-5 font-semibold text-xl cursor-pointer transition-all",
               {
                 "bg-blue-500 text-white": props.isActive, 
-                "bg-white text-black": props.isActive,
-                "text-black hover:bg-white hover:text-black": !props.isActive,
+                "text-black hover:bg-blue-100 hover:text-blue-500": !props.isActive,
               }
             )
           }

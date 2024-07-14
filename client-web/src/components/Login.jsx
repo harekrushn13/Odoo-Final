@@ -7,13 +7,12 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 
 const roles = [
-  { label: "EMPLOYEE", value: "EMPLOYEE" },
-  { label: "HR", value: "HR" },
+  { label: "USER", value: "USER" },
   { label: "ADMIN", value: "ADMIN" },
 ];
 
 function Login() {
-  const [role, setRole] = useState("EMPLOYEE");
+  const [role, setRole] = useState("USER");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
