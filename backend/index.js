@@ -35,9 +35,11 @@ app.all("*", (req, res, next) => {
 });
 dbConnection()
   .then(() => {
+    // addAdmin().then(() => {
     app.listen(process.env.PORT, () => {
       console.log(`Server Started at http://localhost:${process.env.PORT}`);
     });
+    // });
   })
   .catch((err) => {
     console.log(err.message);
@@ -45,12 +47,12 @@ dbConnection()
 
 async function addAdmin() {
   const admin = new usersModel({
-    email: "abc@gmail.com",
-    fullname: "admindas",
+    email: "user@gmail.com",
+    fullname: "User1",
     is_active: 1,
     password: "123",
-    username: "admin",
-    role: "ADMIN",
+    username: "user",
+    role: "USER",
   });
   await admin.save();
 }

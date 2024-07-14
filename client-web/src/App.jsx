@@ -6,11 +6,17 @@ import Login from "./components/Login";
 import { loginLoader, verifyLoader } from "./loaders/verifyLoader";
 import Dashboard from "./pages/Dashboard";
 import LibrarianPage from "./pages/Admin/LibrarianPage";
+import Landing from "./pages/Landing";
 
 function Main() {
   const routes = createBrowserRouter([
     {
       path: "/",
+      element: <Landing />,
+      // loader: loginLoader,
+    },
+    {
+      path: "/login",
       element: <Login />,
       loader: loginLoader,
     },
