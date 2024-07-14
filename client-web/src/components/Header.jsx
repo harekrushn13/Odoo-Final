@@ -47,7 +47,7 @@ function Header({ toggleSidebar, width }) {
         </button>
       ) : (
         <div className="text-3xl text-black font-bold md:mx-5 cursor-pointer">
-          Oddo Hackathon
+          Odoo Hackathon
         </div>
       )}
       {token && role && (

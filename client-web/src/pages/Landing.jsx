@@ -129,7 +129,7 @@ const Landing = () => {
       <Header />
       <div className="container mx-auto p-4">
         <div className="container mx-auto p-4">
-          <div className="flex flex-row md:flex-col">
+          <div className="flex flex-row md:flex-col w-[70vh]">
             <form
               onSubmit={handleSearch}
               className="flex flex-col md:flex-row w-full"
