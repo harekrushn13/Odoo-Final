@@ -48,26 +48,23 @@ function BookDetail() {
             className="w-60 ml-auto h-auto rounded-lg mb-4 ml-12 mt-2 transition-transform transform hover:scale-105" // Image hover effect
           />
           <div className="bg-white p-4 rounded-lg shadow-md w-full max-w-3xl mx-auto">
-            {" "}
-            {/* Centered and limited width */}
             <h2 className="text-3xl font-bold mb-1 transition duration-200 hover:text-blue-600 cursor-pointer">
               {volumeInfo.title || "Title Unavailable"}
-            </h2>{" "}
-            {/* Title hover effect */}
+            </h2>
             <h3 className="text-lg text-gray-600 mb-4">
               {volumeInfo.authors?.join(", ") || "Unknown Author"}
             </h3>
             <div className="space-y-2">
               <div>
-                <span className="font-semibold">ISBN-10:</span>{" "}
+                <span className="font-semibold">ISBN-10:</span>
                 {volumeInfo.industryIdentifiers?.[0]?.identifier || "N/A"}
               </div>
               <div>
-                <span className="font-semibold">ISBN-13:</span>{" "}
+                <span className="font-semibold">ISBN-13:</span>
                 {volumeInfo.industryIdentifiers?.[1]?.identifier || "N/A"}
               </div>
               <div>
-                <span className="font-semibold">Published Date:</span>{" "}
+                <span className="font-semibold">Published Date:</span>
                 {volumeInfo.publishedDate || "N/A"}
               </div>
             </div>
