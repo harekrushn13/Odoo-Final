@@ -9,12 +9,14 @@ import LibrarianPage from "./pages/Admin/LibrarianPage";
 import Landing from "./pages/Landing";
 import Register from "./components/Register";
 import ProfilePage from "./pages/User/ProfilePage";
+import BookDetail from "./pages/User/BookDetail";
 function Main() {
   const routes = createBrowserRouter([
     {
       path: "/",
       element: <Landing />,
     },
+    { path: "book/:id", element: <BookDetail /> },
     {
       path: "/login",
       element: <Login />,
